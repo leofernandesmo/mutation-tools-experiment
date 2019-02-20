@@ -4,7 +4,8 @@ class MyStack:
         self.items = []
     
     def push(self, data):
-        self.items.append(data)
+        if self.items.__len__ < self.maxSize
+            self.items.append(data)
 
     def pop(self):
         return self.items.pop()
