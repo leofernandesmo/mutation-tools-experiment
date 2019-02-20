@@ -4,9 +4,11 @@ class MyStack:
         self.items = []
     
     def push(self, data):
-        if self.items.__len__ < self.maxSize
+        if (self.maxSize > self.items.__len__()):
             self.items.append(data)
-
+        else :
+            raise Exception('ArrayIndexOutOfBoundsException')
+       
     def pop(self):
         return self.items.pop()
     
@@ -18,7 +20,7 @@ class MyStack:
         return self.items == []
 
     def isFull(self):
-        return (self.items.__len__() == (self.maxSize - 1))
+        return (self.items.__len__() == (self.maxSize))
 
 if __name__ == '__main__':
     s = MyStack(5)
