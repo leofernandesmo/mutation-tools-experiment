@@ -19,7 +19,7 @@ public class MyStackTest  {
     stack.push(200);
     stack.push(100);
     stack.push(50);
-    assertEquals(100, stack.pop());
+    assertEquals(50, stack.pop());
   }
 
   @Test  
